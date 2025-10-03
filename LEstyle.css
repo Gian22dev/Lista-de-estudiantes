@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+}
+
+#studentInput{
+    display: flex;
+    width: 370px;
+    padding-left: 30px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: crimson;
+    color: white;
+    gap: 20px;
+}
+
+.inputs{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 20vw;
+}
+
+#output{
+    padding: 20px;
+}
+
+#studentOutput{
+    display: flex;
+    flex-direction: column;
+}
+
+.student{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+    border: 2px outset crimson;
+    transition: 0.3s;
+}
+
+.student:hover{
+    background-color: crimson;
+    color: white;
+}

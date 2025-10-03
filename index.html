@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Estudiantes</title>
+    <link rel="stylesheet" href="LEstyle.css">
+</head>
+<body>
+    <div id="studentInput">
+        <h4>Estudiante</h4>
+        <input class="inputs" type="text" placeholder="Nombre del estudiante" id="studentName">
+        <h4>Edad</h4>
+        <input class="inputs" type="number" min="0" placeholder="Edad del estudiante" id="studentAge">
+        <button class="inputs" onclick="addStudent()">Ingresar</button>
+    </div>
+    <div id="output">
+        <h1>Estudiantes</h1>
+        <div id="studentOutput">
+
+        </div>
+    </div>
+</body>
+<script src="LEjs.js"></script>
+</html>
