@@ -4,6 +4,7 @@ let HTMLstudentList = document.getElementById("studentOutput")
 
 let HTMLstudentName = document.getElementById("studentName")
 let HTMLstudentAge = document.getElementById("studentAge")
+let HTMLstudentLikes = document.getElementById("studentLikes")
 
 function actualizarHTML() {
     HTMLstudentList.innerHTML = ""
@@ -20,6 +21,9 @@ function actualizarHTML() {
         let studentAge = document.createElement("h4")
         studentAge.textContent = `Edad: ${value.age}`
         student.appendChild(studentAge)
+        let studentLikes = document.createElement("h4")
+        studentLikes.textContent = `Gustos: ${value.likes}`
+        student.appendChild(studentLikes)
         HTMLstudentList.appendChild(student)
     })
 }
@@ -27,10 +31,12 @@ function actualizarHTML() {
 function addStudent() {
     let studentName = HTMLstudentName.value
     let studentAge = Number(HTMLstudentAge.value)
-    if (studentName.trim() != "") {
+    let studentLikes = HTMLstudentLikes.value
+    if (studentName.trim() != "" && studentLikes.trim() != "" && isNaN(studentName) == true && isNaN(studentLikes) == true){
         studentList.push({
             name: studentName,
-            age: studentAge
+            age: studentAge,
+            likes: studentLikes
         })
         actualizarHTML()
     }

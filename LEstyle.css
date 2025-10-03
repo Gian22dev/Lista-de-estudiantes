@@ -27,6 +27,16 @@ body{
     border: none;
     border-radius: 10px;
     width: 20vw;
+    transition: 0.3s;
+}
+
+.inputs:hover{
+    background-color:  rgb(165, 10, 41);
+    color: white;
+}
+
+.inputs:hover::placeholder{
+    color: white;
 }
 
 #output{
